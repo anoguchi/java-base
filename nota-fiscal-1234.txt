@@ -1,0 +1,2 @@
+Código do produto: 1234 qtd: 10 valor do produto: 10
+total da compra: 100 
