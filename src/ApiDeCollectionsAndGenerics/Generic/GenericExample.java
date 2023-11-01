@@ -2,7 +2,7 @@ package ApiDeCollectionsAndGenerics.Generic;
 
 /*
  * Vieram para facilitar principalmente casos de casting entre tipos,
- * eeduzindo a complexidade e volume de código escrito.
+ * Reduzindo a complexidade e volume de código escrito.
  * Podemos usar um tipo genérico de dados.
  */
 public class GenericExample<T> {
