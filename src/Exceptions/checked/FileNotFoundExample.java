@@ -1,4 +1,4 @@
-package Exceptions.Checked;
+package Exceptions.checked;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

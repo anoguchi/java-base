@@ -1,4 +1,4 @@
-package ApiDeCollectionsAndGenerics.QueueJava;
+package ApiDeCollectionsAndGenerics.queueJava;
 
 public class Equipe {
 

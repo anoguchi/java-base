@@ -1,4 +1,4 @@
-package ApiDeCollectionsAndGenerics.Generic;
+package ApiDeCollectionsAndGenerics.generic;
 
 /*
  * Vieram para facilitar principalmente casos de casting entre tipos,

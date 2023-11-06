@@ -1,4 +1,4 @@
-package ApiDeCollectionsAndGenerics.SetJava;
+package ApiDeCollectionsAndGenerics.setJava;
 
 import java.util.HashSet;
 

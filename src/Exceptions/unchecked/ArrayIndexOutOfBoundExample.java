@@ -1,4 +1,4 @@
-package Exceptions.Unchecked;
+package Exceptions.unchecked;
 
 public class ArrayIndexOutOfBoundExample {
     public static void main(String[] args) {

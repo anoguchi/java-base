@@ -1,4 +1,4 @@
-package ApiDeCollectionsAndGenerics.Generic;
+package ApiDeCollectionsAndGenerics.generic;
 
 public class GenericMain {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ApiDeCollectionsAndGenerics.QueueJava;
+package ApiDeCollectionsAndGenerics.queueJava;
 
 import java.util.PriorityQueue;
 

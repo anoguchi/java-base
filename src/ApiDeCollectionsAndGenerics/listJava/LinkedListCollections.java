@@ -1,4 +1,4 @@
-package ApiDeCollectionsAndGenerics.ListJava;
+package ApiDeCollectionsAndGenerics.listJava;
 
 import java.util.LinkedList;
 

@@ -1,6 +1,5 @@
-package ApiDeCollectionsAndGenerics.SetJava;
+package ApiDeCollectionsAndGenerics.setJava;
 
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 
 public class LinkedHashSetCollections {
