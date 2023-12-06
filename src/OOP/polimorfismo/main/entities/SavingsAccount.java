@@ -1,4 +1,4 @@
-package OOP.heranca.upcastingAndDowncasting.entities;
+package OOP.polimorfismo.main.entities;
 
 // Final = Não pode ser herdada por outro classe.
 public final class SavingsAccount extends Account {

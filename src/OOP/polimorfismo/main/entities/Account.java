@@ -1,4 +1,4 @@
-package OOP.heranca.upcastingAndDowncasting.entities;
+package OOP.polimorfismo.main.entities;
 
 public class Account {
 

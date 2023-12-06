@@ -35,6 +35,10 @@ public class Main {
             System.out.println("Update!");
         }
 
+        Account account5 = new BusinessAccount(1005, "Juliana", 1000.00, 500.00);
+        account5.withdraw(200.00);
+        System.out.println(account5.getBalance());
+
 
     }
 }
