@@ -1,4 +1,4 @@
-package OOP.abrastracao;
+package OOP.classeAbstrata;
 
 class ContaPoupanca extends Conta {
 

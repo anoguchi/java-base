@@ -1,4 +1,4 @@
-package OOP.abrastracao;
+package OOP.classeAbstrata;
 
 public class AbstracaoMain {
     public static void main(String[] args) {
