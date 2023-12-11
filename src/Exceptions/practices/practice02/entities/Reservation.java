@@ -1,4 +1,4 @@
-package Exceptions.practices.practice01.entities;
+package Exceptions.practices.practice02.entities;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
