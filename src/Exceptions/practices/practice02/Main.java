@@ -45,21 +45,13 @@ public class Main {
         System.out.print("New check-out date (dd/mm/yyyy): ");
         Date getNewDateCheckOut = simpleDateFormat.parse(scanner.next());
 
-        Date dateNow = new Date();
-        if (getNewDateCheckIn.before(dateNow) || getNewDateCheckOut.before(dateNow)) {
-            System.out.println("Error in reservation: Reservation dates for update must be future dates.");
-            return;
-        }
-        if (!getNewDateCheckOut.after(getNewDateCheckIn)) {
-            System.out.println("Error in reservation: Check-out date must be after check-in date");
+        String error = reservation.updateDates(getNewDateCheckIn, getNewDateCheckOut);
+        if(error != null) {
+            System.out.println("Error in reservation: " + error);
             return;
         }
 
-        reservation.updateDates(getNewDateCheckIn, getNewDateCheckOut);
         System.out.println("Reservation: " + reservation);
-
-
-
 
         scanner.close();
 
