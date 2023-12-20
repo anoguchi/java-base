@@ -1,7 +1,7 @@
 package Listas.practices.practice01;
 
 /*
- * Fzer um programa para ler um número inteiro N e depois os dados (id, nome e salario) de N funcionários.
+ * Fazer um programa para ler um número inteiro N e depois os dados (id, nome e salario) de N funcionários.
  * Não deve haver repetição de id.
  *
  * Em seguida, efetuar o aumento de X por cento no salário de um determinado funcionário. Para isso, o programa
