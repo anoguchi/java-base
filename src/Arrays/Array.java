@@ -21,6 +21,7 @@ public class Array {
 
         // percorrendo o array
         List<Integer> itens = Arrays.asList(arrayDeInt04);
+        System.out.println(itens);
         itens.forEach(System.out::println);
 
         // fazendo cópias

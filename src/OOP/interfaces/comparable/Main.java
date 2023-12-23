@@ -26,6 +26,7 @@ public class Main {
                 list.add(name);
                 name = bufferedReader.readLine();
             }
+            // Forma de ordenar uma coleção
             Collections.sort(list);
             for (String s : list) {
                 System.out.println(s);
