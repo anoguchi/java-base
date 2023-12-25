@@ -1,4 +1,4 @@
-package GenericsSetAndMap.map.practice;
+package GenericsSetAndMap.Map.practice;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

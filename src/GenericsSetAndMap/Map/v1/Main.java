@@ -1,4 +1,4 @@
-package GenericsSetAndMap.map.demo;
+package GenericsSetAndMap.Map.v1;
 
 /*
  * É uma coleção de pares chave/valor

@@ -1,9 +1,6 @@
-package GenericsSetAndMap.map.demo2.entities;
-
-import java.util.Objects;
+package ProgramacaoFuncionalAndExpressoesLambda.stream.practices.practice01.entities;
 
 public class Product {
-
     private String name;
     private Double price;
 
@@ -29,14 +26,7 @@ public class Product {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Product product)) return false;
-        return Objects.equals(getName(), product.getName()) && Objects.equals(getPrice(), product.getPrice());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getName(), getPrice());
+    public String toString() {
+        return name + ", " + String.format("%.2f", price);
     }
 }

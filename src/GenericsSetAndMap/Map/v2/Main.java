@@ -1,6 +1,6 @@
-package GenericsSetAndMap.map.demo2;
+package GenericsSetAndMap.Map.v2;
 
-import GenericsSetAndMap.map.demo2.entities.Product;
+import GenericsSetAndMap.Map.v2.entities.Product;
 
 import java.util.HashMap;
 import java.util.Map;
