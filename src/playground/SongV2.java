@@ -1,4 +1,4 @@
-package playground;
+package Playground;
 
 public class SongV2 {
 
