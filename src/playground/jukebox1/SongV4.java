@@ -1,4 +1,4 @@
-package Playground;
+package Playground.jukebox1;
 
 public class SongV4 implements Comparable<SongV4> {
 
