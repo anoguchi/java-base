@@ -3,6 +3,7 @@ package Playground.beatBox;
 import javax.sound.midi.*;
 import javax.swing.*;
 import java.awt.*;
+import java.io.*;
 import java.util.ArrayList;
 
 import static javax.sound.midi.ShortMessage.*;
@@ -46,6 +47,14 @@ public class BeatBox {
         JButton downTempo = new JButton("Tempo Down");
         downTempo.addActionListener(e -> changeTempo(0.97f));
         buttonBox.add(downTempo);
+
+        JButton serialize = new JButton("Serialize");
+        serialize.addActionListener(e -> writeFile());
+        buttonBox.add(serialize);
+
+        JButton restore = new JButton("restore");
+        restore.addActionListener(e -> readFile());
+        buttonBox.add(restore);
 
         Box nameBox = new Box(BoxLayout.Y_AXIS);
         for (String instrumentName : instrumentNames) {
@@ -155,5 +164,38 @@ public class BeatBox {
             e.printStackTrace();
         }
         return event;
+    }
+
+    private void writeFile() {
+        boolean[] checkboxState = new boolean[256];
+
+        for (int i = 0; i < 256; i++) {
+            JCheckBox check = checkBoxList.get(i);
+            if (check.isSelected()) {
+                checkboxState[i] = true;
+            }
+        }
+        try(ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream("CheckBox.ser"))) {
+            os.writeObject(checkboxState);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void readFile() {
+        boolean[] checkboxState = null;
+        try(ObjectInputStream is = new ObjectInputStream(new FileInputStream("Checkbox.ser"))) {
+            checkboxState = (boolean[]) is.readObject();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        for (int i = 0; i < 256; i++) {
+            JCheckBox check = checkBoxList.get(i);
+            check.setSelected(checkboxState[i]);
+        }
+
+        sequencer.stop();
+        buildTrackAndStart();
     }
 }
